@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СТО на Обводном — Автосервис в Санкт-Петербурге</title>
+  <meta name="description" content="СТО на Обводном: автосервис в Санкт-Петербурге. Адрес: Санкт-Петербург, набережная Обводного канала, 158. Телефон: +7 (812) 786-49-69. Онлайн-запись.">
+  <style>
+:root{--bg:#0f1115;--bg2:#181b22;--bg3:#1f2430;--text:#f2f4f8;--muted:#a7b0c0;--accent:#ff6a00;--accent2:#ff8a3d;--line:rgba(255,255,255,.08);--ok:#25d366;--shadow:0 12px 40px rgba(0,0,0,.35);--radius:18px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%,rgba(255,106,0,.18),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+a{color:inherit;text-decoration:none} .container{width:min(1180px,92vw);margin:0 auto}
+.topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(15,17,21,.72);border-bottom:1px solid var(--line)}
+.topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px} .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffb347);display:grid;place-items:center;color:#111;font-weight:900;box-shadow:0 8px 24px rgba(255,106,0,.35)}
+.brand small{display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:2px}
+nav{display:flex;gap:18px;align-items:center} nav a{color:var(--muted);font-weight:600;font-size:14px} nav a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:.2s;font-size:15px}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111;box-shadow:0 10px 30px rgba(255,106,0,.28)} .btn-primary:hover{transform:translateY(-1px);filter:saturate(1.05)}
+.btn-ghost{border-color:var(--line);background:rgba(255,255,255,.02);color:var(--text)} .btn-ghost:hover{background:rgba(255,255,255,.06)}
+.hero{padding:72px 0 42px} .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:stretch}
+.kicker{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,106,0,.12);color:#ffb07a;font-weight:700;font-size:13px;margin-bottom:18px;border:1px solid rgba(255,106,0,.2)}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.05;margin:0 0 18px;letter-spacing:-.02em} .lead{font-size:18px;color:var(--muted);max-width:680px;margin:0 0 28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .info-item{padding:16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)} .info-item .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px} .info-item .val{font-weight:700;font-size:15px}
+.panel{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.booking{padding:28px} .booking h2{margin:0 0 8px;font-size:28px} .booking p{color:var(--muted);margin:0 0 20px}
+form{display:grid;gap:14px} label{display:grid;gap:6px;font-size:14px;font-weight:600;color:#dbe2ee}
+input,select{width:100%;padding:14px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#10141b;color:var(--text);font:inherit;outline:none;transition:.2s}
+input:focus,select:focus{border-color:rgba(255,106,0,.7);box-shadow:0 0 0 4px rgba(255,106,0,.12)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px} .form-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.btn-wa{background:rgba(37,211,102,.12);color:#7dffad;border-color:rgba(37,211,102,.25)} .btn-wa:hover{background:rgba(37,211,102,.18)}
+.btn-tg{background:rgba(42,171,238,.12);color:#8fd8ff;border-color:rgba(42,171,238,.25)} .btn-tg:hover{background:rgba(42,171,238,.18)}
+.fine{font-size:12px;color:var(--muted);margin-top:-4px}
+section{padding:52px 0} .section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px} .section-head h2{margin:0;font-size:clamp(28px,4vw,40px);letter-spacing:-.02em} .section-head p{margin:0;color:var(--muted);max-width:560px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .card{padding:22px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01))}
+.svc-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:8px} .svc h3{margin:0;font-size:18px} .price{white-space:nowrap;color:#111;background:linear-gradient(135deg,var(--accent),#ffb347);padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
+.svc p{margin:0;color:var(--muted);font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:18px} .about .card p{color:var(--muted);margin:0} .about .card h3{margin:0 0 10px;font-size:20px} .list{margin:0;padding:0;list-style:none;display:grid;gap:10px} .list li{padding-left:18px;position:relative;color:#dbe2ee} .list li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);position:absolute;left:0;top:.6em}
+.stars{color:#ffb347;letter-spacing:2px;margin-bottom:10px;font-size:14px} .rev-text{color:#dbe2ee;margin:0 0 14px} .rev-author{color:var(--muted);font-weight:600;font-size:14px}
+.cta-band{padding:28px;border-radius:20px;background:linear-gradient(135deg,rgba(255,106,0,.18),rgba(255,255,255,.02));border:1px solid rgba(255,106,0,.2);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.cta-band h2{margin:0 0 6px;font-size:30px} .cta-band p{margin:0;color:var(--muted)}
+footer{padding:34px 0 44px;color:var(--muted);font-size:14px} .foot{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;border-top:1px solid var(--line);padding-top:24px} .foot strong{color:var(--text)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;padding:20px;z-index:100} .modal.show{display:flex} .modal-box{width:min(560px,100%);background:#171b22;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)} .modal-box h3{margin:0 0 10px;font-size:28px} .modal-box p{margin:0 0 18px;color:var(--muted)} .modal-actions{display:flex;gap:10px;flex-wrap:wrap}
+@media (max-width: 980px){.hero-grid,.about{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr 1fr} nav{display:none}}
+@media (max-width: 640px){.hero{padding-top:48px} .info-strip,.grid-3,.form-row,.form-actions{grid-template-columns:1fr} .section-head,.cta-band,.foot{flex-direction:column;align-items:flex-start} .btn{width:100%} .topbar .inner{padding:12px 0}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container inner">
+      <a class="brand" href="#top">
+        <div class="logo">A</div>
+        <div>СТО на Обводном<small>Автосервис · СПб</small></div>
+      </a>
+      <nav>
+        <a href="#services">Услуги</a>
+        <a href="#about">О сервисе</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#booking">Запись</a>
+      </nav>
+      <a class="btn btn-primary" href="tel:+78127864969">Позвонить</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker">Автосервис в Санкт-Петербурге</div>
+          <h1>СТО на Обводном</h1>
+          <p class="lead">Качественный сервис, понятные цены и удобная онлайн-запись. Позаботимся о вашем автомобиле — от диагностики до финальной проверки результата.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Записаться онлайн</a>
+            <a class="btn btn-ghost" href="tel:+78127864969">+7 (812) 786-49-69</a>
+          </div>
+          <div class="info-strip">
+            <div class="info-item"><div class="label">Адрес</div><div class="val">Санкт-Петербург, набережная Обводного канала, 158</div></div>
+            <div class="info-item"><div class="label">Режим работы</div><div class="val">Пн–Сб 10:00–20:00</div></div>
+            <div class="info-item"><div class="label">Телефон</div><div class="val"><a href="tel:+78127864969">+7 (812) 786-49-69</a></div></div>
+          </div>
+        </div>
+        <div class="panel booking" id="booking">
+          <h2>Онлайн-запись</h2>
+          <p>Выберите услугу и удобное время — мы свяжемся для подтверждения.</p>
+          <form id="bookForm" data-tg="" data-wa="78127864969" data-name="СТО на Обводном">
+            <label>Услуга
+              <select name="service" required>
+                <option value="">Выберите услугу</option>
+              <option value="Диагностика подвески">Диагностика подвески</option>
+              <option value="Ремонт ходовой">Ремонт ходовой</option>
+              <option value="Ремонт двигателя">Ремонт двигателя</option>
+              <option value="Автоэлектрика">Автоэлектрика</option>
+              <option value="Техническое обслуживание">Техническое обслуживание</option>
+              </select>
+            </label>
+            <div class="form-row">
+              <label>Дата <input type="date" name="date" required></label>
+              <label>Время <input type="time" name="time" required></label>
+            </div>
+            <div class="form-row">
+              <label>Телефон <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></label>
+              <label>Номер авто <input type="text" name="car" placeholder="А123БВ 78" required></label>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Отправить заявку</button>
+              <button class="btn btn-ghost" type="button" id="waBtn">Написать в WhatsApp</button>
+            </div>
+            <button class="btn btn-tg" type="button" id="tgBtn" style="width:100%">Быстрая отправка в Telegram</button>
+            <div class="fine">Нажимая «Отправить заявку», вы соглашаетесь на обработку контактных данных для связи по записи.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div><h2>Услуги и цены</h2></div>
+          <p>Прозрачный прайс по основным услугам. Точную стоимость уточняйте по телефону — зависит от автомобиля и объёма работ.</p>
+        </div>
+        <div class="grid-3">
+        <div class="card svc">
+          <div class="svc-top"><h3>Диагностика подвески</h3><span class="price">от 1 000 ₽</span></div>
+          <p>Профессионально, с гарантией качества и понятными сроками.</p>
+        </div>
+        <div class="card svc">
+          <div class="svc-top"><h3>Ремонт ходовой</h3><span class="price">от 2 000 ₽</span></div>
+          <p>Профессионально, с гарантией качества и понятными сроками.</p>
+        </div>
+        <div class="card svc">
+          <div class="svc-top"><h3>Ремонт двигателя</h3><span class="price">от 3 500 ₽</span></div>
+          <p>Профессионально, с гарантией качества и понятными сроками.</p>
+        </div>
+        <div class="card svc">
+          <div class="svc-top"><h3>Автоэлектрика</h3><span class="price">от 1 500 ₽</span></div>
+          <p>Профессионально, с гарантией качества и понятными сроками.</p>
+        </div>
+        <div class="card svc">
+          <div class="svc-top"><h3>Техническое обслуживание</h3><span class="price">от 2 000 ₽</span></div>
+          <p>Профессионально, с гарантией качества и понятными сроками.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div><h2>Почему выбирают нас</h2></div>
+          <p>СТО на Обводном — автосервис в Санкт-Петербурге, где ценят качество, аккуратность и честный подход.</p>
+        </div>
+        <div class="about">
+          <div class="card">
+            <h3>О сервисе</h3>
+            <p>Мы работаем по адресу: Санкт-Петербург, набережная Обводного канала, 158. Для клиентов доступна удобная запись, понятные сроки и консультация перед началом работ. Используем проверенные материалы и даём рекомендации по дальнейшему обслуживанию автомобиля.</p>
+          </div>
+          <div class="card">
+            <h3>Что вы получаете</h3>
+            <ul class="list">
+              <li>Понятную стоимость до начала работ</li>
+              <li>Аккуратное выполнение и контроль качества</li>
+              <li>Удобное время записи и быстрый ответ</li>
+              <li>Режим работы: Пн–Сб 10:00–20:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div><h2>Отзывы клиентов</h2></div>
+          <p>Нам важно, чтобы каждый клиент уезжал довольным результатом и возвращался снова.</p>
+        </div>
+        <div class="grid-3">
+        <div class="card rev">
+          <div class="stars">★★★★★</div>
+          <p class="rev-text">“Сделали ходовую за день, ездить стало комфортно.”</p>
+          <div class="rev-author">Егор</div>
+        </div>
+        <div class="card rev">
+          <div class="stars">★★★★★</div>
+          <p class="rev-text">“Чётко объяснили, что нужно менять, а что ещё походит.”</p>
+          <div class="rev-author">Марат</div>
+        </div>
+        <div class="card rev">
+          <div class="stars">★★★★★</div>
+          <p class="rev-text">“Удобное расположение, можно записаться по телефону.”</p>
+          <div class="rev-author">Алексей</div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Нужна запись на сервис?</h2>
+            <p>Оставьте заявку онлайн или позвоните — подберём удобное время.</p>
+          </div>
+          <a class="btn btn-primary" href="tel:+78127864969">+7 (812) 786-49-69</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <strong>СТО на Обводном</strong><br>
+        Санкт-Петербург, набережная Обводного канала, 158<br>
+        <a href="tel:+78127864969">+7 (812) 786-49-69</a> · Пн–Сб 10:00–20:00
+      </div>
+      <div style="text-align:right;max-width:560px">
+        Демо-версия сайта для СТО на Обводном. По вопросам передачи прав — свяжитесь с разработчиком.
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h3>Заявка сформирована</h3>
+      <p id="modalText">Мы подготовили сообщение для отправки. Свяжитесь с сервисом, чтобы подтвердить запись.</p>
+      <div class="modal-actions">
+        <a class="btn btn-wa" id="modalWa" href="#" target="_blank" rel="noopener">Открыть WhatsApp</a>
+        <a class="btn btn-tg" id="modalTg" href="#" target="_blank" rel="noopener">Открыть Telegram</a>
+        <button class="btn btn-ghost" type="button" id="modalClose">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('bookForm');
+    const waBtn = document.getElementById('waBtn');
+    const tgBtn = document.getElementById('tgBtn');
+    const modal = document.getElementById('modal');
+    const modalText = document.getElementById('modalText');
+    const modalWa = document.getElementById('modalWa');
+    const modalTg = document.getElementById('modalTg');
+    const modalClose = document.getElementById('modalClose');
+    const dateInput = form.querySelector('input[name="date"]');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.min = today;
+
+    function buildMessage() {
+      const fd = new FormData(form);
+      const service = fd.get('service') || '—';
+      const date = fd.get('date') || '—';
+      const time = fd.get('time') || '—';
+      const phone = fd.get('phone') || '—';
+      const car = fd.get('car') || '—';
+      return `Здравствуйте! Хочу записаться в ${form.dataset.name}.
+Услуга: ${service}
+Дата: ${date}
+Время: ${time}
+Телефон: ${phone}
+Авто: ${car}`;
+    }
+    function links(msg) {
+      const enc = encodeURIComponent(msg);
+      const wa = `https://wa.me/${form.dataset.wa}?text=${enc}`;
+      const tgUser = form.dataset.tg;
+      const tg = tgUser ? `https://t.me/${tgUser}` : `https://t.me/share/url?url=&text=${enc}`;
+      return {wa, tg};
+    }
+    function openModal(msg) {
+      const l = links(msg);
+      modalText.textContent = 'Заявка сформирована. Вы можете сразу отправить её в мессенджер для подтверждения записи.';
+      modalWa.href = l.wa;
+      modalTg.href = l.tg;
+      modal.classList.add('show');
+    }
+    function requireValid() {
+      if (!form.reportValidity()) return null;
+      return buildMessage();
+    }
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const msg = requireValid();
+      if (!msg) return;
+      openModal(msg);
+    });
+    waBtn.addEventListener('click', () => {
+      const msg = requireValid(); if (!msg) return;
+      window.open(links(msg).wa, '_blank');
+    });
+    tgBtn.addEventListener('click', () => {
+      const msg = requireValid(); if (!msg) return;
+      window.open(links(msg).tg, '_blank');
+    });
+    modalClose.addEventListener('click', () => modal.classList.remove('show'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('show'); });
+  </script>
+</body>
+</html>
