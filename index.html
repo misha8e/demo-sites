@@ -3,255 +3,364 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Салончик — парикмахерская на проспекте Энергетиков, 46, корп. 1</title>
-  <meta name="description" content="Салончик — салон красоты и парикмахерская в Санкт-Петербурге на проспекте Энергетиков, 46, корп. 1. Стрижки, окрашивание, укладки. Запись по телефону и в мессенджерах.">
+  <title>Студия красоты — проспект Энергетиков, 46, корп. 1</title>
+  <meta name="description" content="Студия красоты на проспекте Энергетиков, 46, корп. 1 в Санкт-Петербурге. Стрижки, окрашивание, укладки, уход и макияж. Запись по телефону +7 (962) 717-74-28.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#fff7fb;
-      --text:#2b1e2f;
-      --muted:#75657b;
-      --line:rgba(43,30,47,.10);
-      --pink:#ff4fa3;
-      --purple:#7c4dff;
-      --shadow:0 18px 50px rgba(124,77,255,.12);
-      --radius:22px;
+      --bg:#fffaf7;
+      --bg-soft:#fff3ec;
+      --surface:#ffffff;
+      --surface-alt:#fff7f1;
+      --text:#2d211d;
+      --muted:#746763;
+      --line:rgba(74,50,42,.12);
+      --coral:#e77b66;
+      --coral-deep:#cf624d;
+      --rose:#f3b4a6;
+      --plum:#5b3a42;
+      --gold:#d7a46a;
+      --shadow:0 20px 60px rgba(83, 52, 43, .10);
+      --radius:28px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;font-family:'Montserrat',system-ui,-apple-system,sans-serif;color:var(--text);background:
-      radial-gradient(900px 500px at 10% -10%, rgba(255,79,163,.18), transparent 60%),
-      radial-gradient(900px 500px at 100% 0%, rgba(124,77,255,.16), transparent 55%),
-      linear-gradient(180deg,#fff9fc 0%,#fff 40%,#f7f5ff 100%);
-      line-height:1.55;}
+    body{
+      margin:0;
+      font-family:'Manrope',system-ui,-apple-system,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(800px 420px at 5% -5%, rgba(243,180,166,.35), transparent 60%),
+        radial-gradient(700px 420px at 100% 0%, rgba(215,164,106,.22), transparent 55%),
+        linear-gradient(180deg,#fffaf7 0%, #fff 35%, #fff8f4 100%);
+      line-height:1.6;
+    }
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
-    .container{width:min(1120px,calc(100% - 32px));margin:0 auto}
-    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,250,253,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(43,30,47,.06)}
-    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
-    .brand img{width:44px;height:44px;border-radius:14px;object-fit:cover;box-shadow:0 8px 24px rgba(255,79,163,.25)}
-    .nav{display:flex;gap:22px;align-items:center;color:var(--muted);font-weight:600;font-size:.94rem}
-    .nav a:hover{color:var(--pink)}
-    .actions{display:flex;gap:10px;align-items:center}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:14px;font-weight:700;font-size:.94rem;border:1px solid transparent;cursor:pointer;transition:.2s;font-family:inherit}
-    .btn:hover{transform:translateY(-1px)}
-    .btn-primary{color:#fff;background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 12px 30px rgba(255,79,163,.28)}
-    .btn-outline{background:#fff;border-color:var(--line);color:var(--text)}
-    .btn-outline:hover{border-color:rgba(255,79,163,.35);color:var(--pink)}
-    .hero{padding:34px 0 24px}
-    .hero-card{position:relative;overflow:hidden;border-radius:34px;min-height:560px;display:flex;align-items:flex-end;box-shadow:0 24px 70px rgba(74,35,90,.18)}
-    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .hero-overlay{position:absolute;inset:0;background:
-      linear-gradient(90deg, rgba(45,18,56,.72) 0%, rgba(45,18,56,.45) 42%, rgba(45,18,56,.15) 100%),
-      linear-gradient(180deg, rgba(255,79,163,.10), rgba(124,77,255,.18));}
-    .hero-content{position:relative;z-index:2;padding:44px;max-width:760px;color:#fff}
-    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);font-weight:700;font-size:.82rem;margin-bottom:18px;border:1px solid rgba(255,255,255,.18)}
-    .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.2)}
-    h1{margin:0 0 14px;font-size:clamp(2.8rem,7vw,5.2rem);line-height:.95;letter-spacing:-.045em}
-    .hero p{margin:0 0 24px;font-size:1.08rem;max-width:620px;color:rgba(255,255,255,.9)}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
-    .hero .btn-outline{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28);color:#fff;backdrop-filter:blur(6px)}
-    .hero .btn-outline:hover{background:rgba(255,255,255,.2);color:#fff}
-    .hero-info{display:flex;gap:14px;flex-wrap:wrap}
-    .info-pill{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);min-width:180px}
-    .info-pill strong{display:block;font-size:.98rem;margin-bottom:2px}
-    .info-pill span{font-size:.86rem;color:rgba(255,255,255,.8)}
-    .rating-float{position:absolute;right:28px;bottom:28px;z-index:2;background:rgba(255,255,255,.95);color:var(--text);padding:18px 20px;border-radius:20px;box-shadow:0 16px 40px rgba(0,0,0,.12)}
-    .rating-float .r{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem}
-    .stars{color:#ffb400;letter-spacing:2px}
-    .rating-float small{display:block;color:var(--muted);font-weight:600;margin-top:2px}
-    section{padding:64px 0}
-    .section-head{margin-bottom:28px}
-    .kicker{display:inline-flex;padding:7px 12px;border-radius:999px;background:linear-gradient(135deg,rgba(255,79,163,.12),rgba(124,77,255,.12));color:var(--purple);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
-    h2{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.03em}
-    .section-head p{margin:12px 0 0;color:var(--muted);max-width:680px}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-    .card{background:rgba(255,255,255,.78);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);border-radius:var(--radius);padding:30px}
-    .card p{color:var(--muted);margin:0 0 14px}
-    .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
-    .feat{padding:14px 16px;border-radius:16px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:.93rem;display:flex;gap:10px}
-    .feat i{width:24px;height:24px;flex:0 0 24px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-style:normal;font-size:.72rem;font-weight:800}
-    .visual{border-radius:var(--radius);overflow:hidden;min-height:360px;box-shadow:var(--shadow)}
-    .visual img{width:100%;height:100%;object-fit:cover;min-height:360px}
-    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .service{background:#fff;border-radius:22px;padding:26px;border:1px solid rgba(43,30,47,.06);box-shadow:0 10px 30px rgba(124,77,255,.06);transition:.2s}
-    .service:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(255,79,163,.12)}
-    .icon{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:16px;background:linear-gradient(135deg,rgba(255,79,163,.14),rgba(124,77,255,.14))}
-    .service h3{margin:0 0 8px;font-size:1.1rem}
-    .service p{margin:0 0 14px;color:var(--muted);font-size:.93rem;min-height:63px}
-    .price{font-weight:800;color:var(--purple)}
-    .reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .review{background:#fff;padding:24px;border-radius:20px;border:1px solid rgba(43,30,47,.06);box-shadow:0 10px 30px rgba(124,77,255,.05)}
-    .review-head{display:flex;gap:12px;align-items:center;margin-bottom:12px}
-    .avatar{width:46px;height:46px;border-radius:50%;object-fit:cover}
-    .name{font-weight:700;font-size:.95rem}
-    .date{font-size:.82rem;color:var(--muted)}
-    .review .stars{font-size:.85rem;margin-bottom:10px}
-    .review p{margin:0;color:#54485a;font-size:.92rem}
-    .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:16px}
-    .g{border-radius:20px;overflow:hidden;min-height:220px;box-shadow:0 12px 30px rgba(43,30,47,.08)}
-    .g img{width:100%;height:100%;object-fit:cover;transition:.4s}
-    .g:hover img{transform:scale(1.03)}
-    .g.big{grid-row:span 2;min-height:456px}
-    .contacts{display:grid;grid-template-columns:.95fr 1.05fr;gap:22px}
-    .contact-list{display:grid;gap:14px;margin-top:20px}
-    .contact-item{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+    .container{width:min(1160px,calc(100% - 40px));margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:60;background:rgba(255,250,247,.84);backdrop-filter:blur(16px);border-bottom:1px solid rgba(74,50,42,.08)}
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-mark{width:46px;height:46px;border-radius:16px;background:linear-gradient(145deg,var(--coral),#f0a089);color:#fff;display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;box-shadow:0 12px 28px rgba(231,123,102,.32)}
+    .brand-name{display:flex;flex-direction:column;line-height:1.05}
+    .brand-name strong{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;letter-spacing:-.01em}
+    .brand-name span{font-size:.74rem;color:var(--muted);font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
+    .nav{display:flex;gap:26px;align-items:center;color:var(--muted);font-weight:600;font-size:.94rem}
+    .nav a{position:relative}
+    .nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:100%;height:2px;background:linear-gradient(90deg,var(--coral),var(--gold));transform:scaleX(0);transform-origin:left;transition:.25s}
+    .nav a:hover{color:var(--text)}
+    .nav a:hover::after{transform:scaleX(1)}
+    .actions{display:flex;gap:12px;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:.94rem;border:1px solid transparent;cursor:pointer;transition:.25s ease;font-family:inherit;white-space:nowrap}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{color:#fff;background:linear-gradient(135deg,var(--coral),#ef9883);box-shadow:0 14px 30px rgba(231,123,102,.3)}
+    .btn-primary:hover{filter:saturate(1.03) brightness(.99)}
+    .btn-outline{background:rgba(255,255,255,.7);border-color:var(--line);color:var(--text)}
+    .btn-outline:hover{border-color:rgba(231,123,102,.4);color:var(--coral-deep);background:#fff}
+
+    .hero{padding:42px 0 24px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch}
+    .hero-copy{padding:34px 0;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:rgba(231,123,102,.1);color:var(--coral-deep);font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:24px}
+    .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.7}
+    h1,h2,h3{font-family:'Cormorant Garamond',serif;margin:0}
+    h1{font-size:clamp(3.2rem,7vw,6rem);line-height:.92;letter-spacing:-.03em;margin-bottom:24px;color:#352522}
+    h1 .accent{display:block;color:var(--coral-deep);font-style:italic;font-weight:600}
+    .hero-copy p{margin:0 0 30px;max-width:600px;font-size:1.08rem;color:var(--muted)}
+    .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+    .hero-details{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:680px}
+    .detail{padding-top:18px;border-top:1px solid var(--line)}
+    .detail strong{display:block;font-size:.98rem;margin-bottom:4px;font-weight:800}
+    .detail span{color:var(--muted);font-size:.9rem;line-height:1.45;display:block}
+    .hero-visual{position:relative;min-height:640px}
+    .hero-frame{position:absolute;inset:0;border-radius:200px 200px 36px 36px;overflow:hidden;box-shadow:var(--shadow)}
+    .hero-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(53,37,34,.02),rgba(53,37,34,.12) 65%,rgba(53,37,34,.28));}
+    .hero-frame img{width:100%;height:100%;object-fit:cover}
+    .floating-card{position:absolute;left:-24px;bottom:44px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);padding:22px 24px;border-radius:24px;box-shadow:0 18px 40px rgba(83,52,43,.12);border:1px solid rgba(255,255,255,.7);max-width:270px}
+    .floating-card .stars{color:#e3a24f;font-size:1rem;letter-spacing:2px;margin-bottom:8px}
+    .floating-card strong{display:block;font-size:1rem;margin-bottom:4px}
+    .floating-card p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+    .stamp{position:absolute;right:22px;top:22px;width:116px;height:116px;border-radius:50%;background:rgba(255,250,247,.92);backdrop-filter:blur(8px);border:1px solid rgba(231,123,102,.2);display:grid;place-items:center;text-align:center;padding:14px;box-shadow:0 10px 30px rgba(83,52,43,.08)}
+    .stamp span{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--plum);line-height:1.5}
+
+    section{padding:84px 0}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:38px}
+    .kicker{display:inline-flex;align-items:center;gap:10px;color:var(--coral-deep);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+    .kicker::before{content:"";width:28px;height:1px;background:currentColor}
+    h2{font-size:clamp(2.4rem,5vw,4rem);line-height:.98;letter-spacing:-.02em;color:#352522}
+    .section-head p{margin:14px 0 0;color:var(--muted);max-width:620px;font-size:1.02rem}
+    .about-wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:28px}
+    .about-card{background:rgba(255,255,255,.72);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.9);border-radius:var(--radius);padding:38px;box-shadow:var(--shadow)}
+    .about-card p{margin:0 0 16px;color:var(--muted);font-size:1rem}
+    .about-card p:last-of-type{margin-bottom:0}
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+    .feature{padding:16px 18px;border-radius:18px;background:linear-gradient(180deg,#fff,#fff8f5);border:1px solid rgba(231,123,102,.12);font-weight:600;font-size:.94rem;display:flex;gap:12px;align-items:flex-start}
+    .feature::before{content:"✦";color:var(--coral-deep);font-size:.8rem;line-height:1.6}
+    .about-images{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .about-img{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);min-height:240px}
+    .about-img:first-child{grid-row:span 2;min-height:500px;border-radius:140px 140px 28px 28px}
+    .about-img img{width:100%;height:100%;object-fit:cover}
+
+    .services{background:linear-gradient(180deg, rgba(255,243,236,.55), rgba(255,250,247,0))}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .service{background:rgba(255,255,255,.82);border:1px solid rgba(74,50,42,.08);border-radius:26px;padding:30px;transition:.3s ease;position:relative;overflow:hidden}
+    .service::after{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--coral),var(--gold));opacity:0;transition:.3s}
+    .service:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(83,52,43,.1)}
+    .service:hover::after{opacity:1}
+    .service-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;line-height:1;color:rgba(231,123,102,.35);margin-bottom:18px;font-weight:600}
+    .service h3{font-size:2rem;line-height:1;margin-bottom:12px;color:#352522}
+    .service p{margin:0 0 20px;color:var(--muted);font-size:.95rem;min-height:72px}
+    .price{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--bg-soft);color:var(--plum);font-weight:800;font-size:.92rem}
+    .price small{font-weight:700;color:var(--muted)}
+
+    .quote-band{padding:0 0 84px}
+    .quote{border-radius:36px;padding:44px;background:linear-gradient(135deg,#5b3a42 0%, #7a4d52 45%, #c97967 100%);color:#fff;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;box-shadow:0 24px 60px rgba(91,58,66,.25);position:relative;overflow:hidden}
+    .quote::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.08);right:-100px;top:-140px}
+    .quote h2{color:#fff;margin-bottom:14px;font-size:clamp(2.2rem,4vw,3.6rem)}
+    .quote p{margin:0;color:rgba(255,255,255,.86);max-width:640px;font-size:1.03rem}
+    .quote-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;position:relative}
+    .quote .btn-primary{background:#fff;color:var(--plum);box-shadow:none}
+    .quote .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+    .quote .btn-outline:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.55)}
+
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .review{background:#fff;border:1px solid rgba(74,50,42,.08);border-radius:26px;padding:30px;box-shadow:0 10px 30px rgba(83,52,43,.04)}
+    .review-stars{color:#e3a24f;letter-spacing:2px;font-size:.95rem;margin-bottom:16px}
+    .review p{margin:0 0 22px;color:#544744;font-size:.97rem}
+    .review-author{display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+    .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(145deg,#f5d4ca,#e8b9a8);color:var(--plum);display:grid;place-items:center;font-weight:800;font-size:.9rem;flex:0 0 48px}
+    .author-name{font-weight:800;font-size:.95rem}
+    .author-meta{font-size:.84rem;color:var(--muted)}
+
+    .gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:18px}
+    .g-item{border-radius:24px;overflow:hidden;position:relative;box-shadow:0 12px 30px rgba(83,52,43,.08)}
+    .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+    .g-item:hover img{transform:scale(1.04)}
+    .g-item.large{grid-row:span 2}
+    .g-label{position:absolute;left:16px;bottom:16px;padding:10px 14px;border-radius:999px;background:rgba(255,250,247,.88);backdrop-filter:blur(8px);font-size:.8rem;font-weight:800;color:var(--plum)}
+
+    .booking{background:linear-gradient(180deg,#fff7f2 0%, #fffaf7 100%)}
+    .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+    .booking-copy p{color:var(--muted);font-size:1.02rem;max-width:560px;margin:16px 0 0}
+    .steps{display:grid;gap:16px;margin-top:30px;max-width:560px}
+    .step{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;background:rgba(255,255,255,.7);border:1px solid rgba(74,50,42,.07);border-radius:20px}
+    .step-num{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:linear-gradient(135deg,var(--coral),#f0a089);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.85rem}
+    .step strong{display:block;margin-bottom:2px;font-size:.96rem}
+    .step span{color:var(--muted);font-size:.92rem}
+    .form-card{background:#fff;border-radius:32px;padding:34px;box-shadow:var(--shadow);border:1px solid rgba(74,50,42,.06)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:flex;flex-direction:column;gap:8px}
+    .field.full{grid-column:span 2}
+    label{font-size:.85rem;font-weight:700;color:#4e403d}
+    input,select,textarea{width:100%;padding:14px 16px;border-radius:16px;border:1px solid rgba(74,50,42,.14);background:#fff;font:inherit;color:var(--text);transition:.2s}
+    input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(231,123,102,.55);box-shadow:0 0 0 4px rgba(231,123,102,.12)}
+    textarea{min-height:110px;resize:vertical}
+    .form-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .form-note{margin:14px 0 0;color:var(--muted);font-size:.82rem}
+    .form-success{display:none;margin-top:16px;padding:14px 16px;border-radius:16px;background:#eef8f1;color:#286245;font-weight:600;font-size:.92rem}
+    .form-success.show{display:block}
+
+    .contacts-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+    .contact-card{padding:38px}
+    .contact-list{display:grid;gap:0;margin-top:24px}
+    .contact-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:flex-start}
     .contact-item:last-child{padding-bottom:0;border-bottom:0}
-    .cicon{width:46px;height:46px;flex:0 0 46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(255,79,163,.12),rgba(124,77,255,.14));color:var(--purple);font-weight:800}
-    .contact-item small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;font-weight:700;margin-bottom:4px}
-    .contact-item strong,.contact-item a.link{font-size:1rem}
-    .contact-item a.link:hover{color:var(--pink)}
-    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-    .socials a{padding:11px 16px;border-radius:12px;font-weight:700;font-size:.9rem;color:#fff}
-    .wa{background:#25D366}.tg{background:#229ED9}.vk{background:#0077FF}
-    .map{border-radius:var(--radius);overflow:hidden;min-height:460px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.8)}
-    .map iframe{width:100%;height:100%;min-height:460px;border:0}
-    .cta{padding:0 0 64px}
-    .cta-box{border-radius:32px;padding:38px;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 20px 50px rgba(124,77,255,.28)}
-    .cta-box h2{color:#fff;margin-bottom:10px;font-size:clamp(1.8rem,3vw,2.8rem)}
-    .cta-box p{margin:0;color:rgba(255,255,255,.88);max-width:640px}
-    .cta-box .btn-primary{background:#fff;color:var(--purple);box-shadow:none}
-    footer{padding:28px 0 44px;color:var(--muted);font-size:.9rem}
-    .foot{display:flex;justify-content:space-between;gap:16px;align-items:center;padding-top:24px;border-top:1px solid var(--line)}
+    .c-icon{width:50px;height:50px;flex:0 0 50px;border-radius:16px;background:linear-gradient(145deg,rgba(231,123,102,.14),rgba(215,164,106,.18));color:var(--coral-deep);display:grid;place-items:center;font-size:1.15rem}
+    .contact-item small{display:block;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+    .contact-item strong,.contact-item a.link{font-size:1.02rem;font-weight:700;line-height:1.45}
+    .contact-item a.link:hover{color:var(--coral-deep)}
+    .socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .social{padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem;border:1px solid var(--line);background:#fff;transition:.2s}
+    .social:hover{transform:translateY(-1px)}
+    .social.wa{color:#1f8f4d;border-color:rgba(37,211,102,.25);background:rgba(37,211,102,.06)}
+    .social.tg{color:#1c78a8;border-color:rgba(34,158,217,.25);background:rgba(34,158,217,.06)}
+    .map-wrap{border-radius:32px;overflow:hidden;min-height:520px;box-shadow:var(--shadow);border:1px solid rgba(74,50,42,.08);background:#efe4dc}
+    .map-wrap iframe{width:100%;height:100%;min-height:520px;border:0}
+
+    footer{padding:34px 0 48px;color:var(--muted);font-size:.92rem}
+    .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;padding-top:28px;border-top:1px solid var(--line)}
+    .foot a:hover{color:var(--coral-deep)}
+    .foot-links{display:flex;gap:20px;flex-wrap:wrap}
+
     @media (max-width:1024px){
-      .services,.reviews{grid-template-columns:repeat(2,1fr)}
-      .nav{display:none}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .reviews-grid{grid-template-columns:1fr}
+      .hero-details{grid-template-columns:1fr;gap:0}
+      .detail{padding:16px 0}
     }
-    @media (max-width:860px){
-      .about-grid,.contacts,.gallery{grid-template-columns:1fr}
-      .gallery{grid-template-rows:auto}
-      .g.big{grid-row:span 1;min-height:320px}
-      .g{min-height:220px}
-      .hero-card{min-height:520px}
+    @media (max-width:920px){
+      .nav{display:none}
+      .hero-grid,.about-wrap,.booking-grid,.contacts-grid,.quote{grid-template-columns:1fr}
+      .hero-copy{padding:10px 0 0}
+      .hero-visual{min-height:560px}
+      .floating-card{left:20px;bottom:20px}
+      .quote-actions{justify-content:flex-start}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+      .g-item.large{grid-row:span 1;min-height:320px}
+      .g-item{min-height:240px}
     }
     @media (max-width:640px){
-      .container{width:min(1120px,calc(100% - 24px))}
-      .topbar .inner{padding:12px 0}
+      .container{width:min(1160px,calc(100% - 28px))}
+      .topbar .inner{padding:14px 0}
       .actions .btn-outline{display:none}
-      .hero-content{padding:28px}
-      .rating-float{position:relative;right:auto;bottom:auto;margin:0 20px 20px;z-index:2}
-      .hero-card{align-items:flex-end;flex-direction:column;justify-content:flex-end}
-      .features,.services,.reviews{grid-template-columns:1fr}
-      section{padding:52px 0}
-      .cta-box,.foot{flex-direction:column;align-items:flex-start}
+      .brand-name span{display:none}
+      .hero{padding-top:28px}
+      section{padding:64px 0}
+      .hero-visual{min-height:460px}
+      .hero-frame{border-radius:140px 140px 28px 28px}
+      .stamp{width:96px;height:96px;right:14px;top:14px}
+      .stamp span{font-size:.64rem}
+      .floating-card{position:relative;left:auto;bottom:auto;margin:18px 0 0;max-width:none}
+      .feature-grid,.services-grid,.form-grid,.gallery-grid{grid-template-columns:1fr}
+      .field.full{grid-column:span 1}
+      .about-img:first-child{min-height:360px;border-radius:100px 100px 24px 24px}
+      .quote{padding:30px;border-radius:28px}
+      .form-card,.about-card,.contact-card{padding:28px}
+      .foot{flex-direction:column;align-items:flex-start}
       .btn{width:100%}
-      .hero-cta .btn{width:auto}
+      .hero-cta .btn,.quote-actions .btn,.form-actions .btn{width:auto}
     }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="container inner">
-      <a class="brand" href="#top">
-        <img src="https://avatars.mds.yandex.net/get-maps-adv-crm/3713455/2a0000017d65be75d5388b1f6bb7247b7bd9/landing_logo" alt="Логотип Салончик">
-        <span>Салончик</span>
+      <a class="brand" href="#top" aria-label="Студия красоты">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">
+          <strong>Студия красоты</strong>
+          <span>Энергетиков, 46</span>
+        </span>
       </a>
       <nav class="nav" aria-label="Навигация">
-        <a href="#about">О нас</a>
-        <a href="#services">Каталог</a>
+        <a href="#about">О студии</a>
+        <a href="#services">Услуги</a>
         <a href="#reviews">Отзывы</a>
-        <a href="#gallery">Фото</a>
+        <a href="#gallery">Атмосфера</a>
         <a href="#contacts">Контакты</a>
       </nav>
       <div class="actions">
-        <a class="btn btn-outline" href="tel:+79675704350">+7 967 570-43-50</a>
-        <a class="btn btn-primary" href="https://wa.me/79217700136" target="_blank" rel="noopener">Записаться</a>
+        <a class="btn btn-outline" href="tel:+79627177428">+7 (962) 717-74-28</a>
+        <a class="btn btn-primary" href="#booking">Записаться</a>
       </div>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="container">
-        <div class="hero-card">
-          <img class="hero-bg" src="https://avatars.mds.yandex.net/get-maps-adv-crm/3888992/2a0000017d65be75d59faa4cf76bdaf8a1d7/landing_background" alt="Салончик — парикмахерская">
-          <div class="hero-overlay"></div>
-          <div class="hero-content">
-            <div class="badge">Салон красоты • Парикмахерская</div>
-            <h1>Салончик</h1>
-            <p>Яркое место красоты на проспекте Энергетиков, где стрижки, укладки и уход за волосами делают с душой. Заходите за новым образом и хорошим настроением!</p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="https://wa.me/79217700136" target="_blank" rel="noopener">Записаться в WhatsApp</a>
-              <a class="btn btn-outline" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%AD%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%2C%2046%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201" target="_blank" rel="noopener">Как добраться</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Студия красоты в Санкт-Петербурге</div>
+          <h1>Красота <span class="accent">в вашем ритме</span></h1>
+          <p>Студия красоты на проспекте Энергетиков — пространство, где уход за собой становится приятным ритуалом. Стрижки, окрашивание, укладки и забота о деталях в тёплой, стильной атмосфере.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="tel:+79627177428">Позвонить и записаться</a>
+            <a class="btn btn-outline" href="https://wa.me/79627177428" target="_blank" rel="noopener">Написать в WhatsApp</a>
+          </div>
+          <div class="hero-details">
+            <div class="detail">
+              <strong>Пр. Энергетиков, 46, корп. 1</strong>
+              <span>Удобно добираться из любого района рядом</span>
             </div>
-            <div class="hero-info">
-              <div class="info-pill">
-                <strong>Пр. Энергетиков, 46, к.1</strong>
-                <span>Санкт-Петербург</span>
-              </div>
-              <div class="info-pill">
-                <strong>+7 967 570-43-50</strong>
-                <span>Звоните и записывайтесь</span>
-              </div>
-              <div class="info-pill">
-                <strong>Оплата картой</strong>
-                <span>Льготная стрижка</span>
-              </div>
+            <div class="detail">
+              <strong>+7 (962) 717-74-28</strong>
+              <span>Звоните или пишите для записи</span>
+            </div>
+            <div class="detail">
+              <strong>Индивидуальный подход</strong>
+              <span>Подбираем образ под стиль и настроение</span>
             </div>
           </div>
-          <div class="rating-float">
-            <div class="r"><span class="stars">★★★★★</span> 4.7</div>
-            <small>на Яндекс Картах</small>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80" alt="Интерьер студии красоты">
+          </div>
+          <div class="stamp"><span>Ваша<br>студия<br>красоты</span></div>
+          <div class="floating-card">
+            <div class="stars">★★★★★</div>
+            <strong>Место, куда хочется возвращаться</strong>
+            <p>Тёплый сервис, внимательные мастера и результат, который чувствуется с первого взгляда.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="container about-grid">
-        <div class="card">
-          <div class="kicker">О нас</div>
-          <h2>Уютная парикмахерская рядом с вами</h2>
-          <p>«Салончик» — это место, где к каждому клиенту относятся внимательно и по-доброму. Мастера помогут подобрать стрижку, освежить образ и дадут рекомендации по уходу.</p>
-          <p>Приходите всей семьёй: мы делаем стрижки для женщин, мужчин и детей, создаём аккуратные укладки и помогаем выглядеть уверенно каждый день.</p>
-          <div class="features">
-            <div class="feat"><i>✓</i><span>Оплата картой</span></div>
-            <div class="feat"><i>✓</i><span>Льготная стрижка</span></div>
-            <div class="feat"><i>✓</i><span>Опытные мастера</span></div>
-            <div class="feat"><i>✓</i><span>Запись в мессенджерах</span></div>
+      <div class="container about-wrap">
+        <div class="about-card">
+          <div class="kicker">О студии</div>
+          <h2>Пространство красоты с характером</h2>
+          <p>Мы создали студию, где важно всё: как вас встретят, как подберут образ и с каким настроением вы уйдёте. Здесь нет суеты — только внимание к деталям, профессиональные руки и комфортная атмосфера.</p>
+          <p>Помогаем подчеркнуть естественную красоту, обновить стрижку, подобрать оттенок или создать укладку для особого дня. Каждая услуга начинается с внимательного разговора о вашем пожелании.</p>
+          <div class="feature-grid">
+            <div class="feature">Опытные мастера и бережный подход</div>
+            <div class="feature">Профессиональные средства по уходу</div>
+            <div class="feature">Уютная атмосфера и комфортная запись</div>
+            <div class="feature">Образы для жизни и особых событий</div>
           </div>
         </div>
-        <div class="visual">
-          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80" alt="Атмосфера салона красоты">
+        <div class="about-images">
+          <div class="about-img"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80" alt="Мастер работает с волосами"></div>
+          <div class="about-img"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Рабочее место мастера"></div>
+          <div class="about-img"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80" alt="Красивый образ после визита"></div>
         </div>
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="services">
       <div class="container">
         <div class="section-head">
-          <div class="kicker">Каталог</div>
-          <h2>Популярные услуги</h2>
-          <p>Основные услуги салона — уточняйте стоимость и свободное время у мастера по телефону или в мессенджерах.</p>
+          <div>
+            <div class="kicker">Услуги</div>
+            <h2>Выберите свой ритуал красоты</h2>
+            <p>Популярные услуги студии. Точную стоимость мастер подскажет перед процедурой — она зависит от длины волос и выбранной техники.</p>
+          </div>
+          <a class="btn btn-outline" href="#booking">Записаться</a>
         </div>
-        <div class="services">
+        <div class="services-grid">
           <article class="service">
-            <div class="icon">✂️</div>
-            <h3>Женская стрижка</h3>
-            <p>Стрижка с учётом формы лица, структуры волос и ваших пожеланий.</p>
-            <div class="price">от 1 200 ₽</div>
+            <div class="service-num">01</div>
+            <h3>Стрижки</h3>
+            <p>Женские и мужские стрижки, которые подчёркивают черты лица и легко укладываются каждый день.</p>
+            <div class="price"><small>от</small> 1 200 ₽</div>
           </article>
           <article class="service">
-            <div class="icon">💈</div>
-            <h3>Мужская стрижка</h3>
-            <p>Аккуратные классические и современные стрижки, можно без записи.</p>
-            <div class="price">от 900 ₽</div>
-          </article>
-          <article class="service">
-            <div class="icon">🎨</div>
+            <div class="service-num">02</div>
             <h3>Окрашивание</h3>
-            <p>Подбор оттенка, тонирование и окрашивание для свежего образа.</p>
-            <div class="price">от 2 500 ₽</div>
+            <p>Тонирование, сложные техники и обновление цвета с бережным отношением к волосам.</p>
+            <div class="price"><small>от</small> 2 800 ₽</div>
           </article>
           <article class="service">
-            <div class="icon">✨</div>
-            <h3>Укладка</h3>
-            <p>Лёгкая повседневная или праздничная укладка для особого случая.</p>
-            <div class="price">от 800 ₽</div>
+            <div class="service-num">03</div>
+            <h3>Укладки</h3>
+            <p>Лёгкие повседневные волны или выразительная укладка для съёмки, праздника и особого вечера.</p>
+            <div class="price"><small>от</small> 1 000 ₽</div>
           </article>
+          <article class="service">
+            <div class="service-num">04</div>
+            <h3>Уход</h3>
+            <p>Восстановление, питание и блеск волос с помощью профессиональных процедур и косметики.</p>
+            <div class="price"><small>от</small> 1 500 ₽</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container">
+        <div class="quote">
+          <div>
+            <h2>Время для себя — это тоже забота</h2>
+            <p>Позвоните или оставьте заявку, и мы подберём удобное время, мастера и услугу. Поможем определиться с образом, если вы пока в поиске вдохновения.</p>
+          </div>
+          <div class="quote-actions">
+            <a class="btn btn-primary" href="tel:+79627177428">+7 (962) 717-74-28</a>
+            <a class="btn btn-outline" href="https://wa.me/79627177428" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
         </div>
       </div>
     </section>
@@ -259,42 +368,36 @@
     <section id="reviews">
       <div class="container">
         <div class="section-head">
-          <div class="kicker">Отзывы</div>
-          <h2>Нас рекомендуют клиенты</h2>
-          <p>Реальные впечатления клиентов о мастерах и атмосфере «Салончика».</p>
+          <div>
+            <div class="kicker">Отзывы</div>
+            <h2>Тёплые слова наших гостей</h2>
+            <p>Больше всего мы ценим доверие и эмоции, с которыми клиенты возвращаются снова.</p>
+          </div>
         </div>
-        <div class="reviews">
+        <div class="reviews-grid">
           <article class="review">
-            <div class="review-head">
-              <img class="avatar" src="https://avatars.mds.yandex.net/get-yapic/26311/ahL0NLn5yHt5BM6nnpJxQA6pDE-1/islands-middle" alt="Татьяна Петрова">
-              <div><div class="name">Татьяна Петрова</div><div class="date">31 октября</div></div>
+            <div class="review-stars">★★★★★</div>
+            <p>Очень понравилась атмосфера и внимательность мастера. Стрижка получилась именно такой, как я хотела, а укладка держалась весь день.</p>
+            <div class="review-author">
+              <div class="avatar">А</div>
+              <div><div class="author-name">Анна</div><div class="author-meta">гость студии</div></div>
             </div>
-            <div class="stars">★★★★★</div>
-            <p>Всегда вожу своих детей на стрижку, девочки очень хорошо стригут. Сегодня сама стриглась, очень красиво. Дали необходимые рекомендации по уходу. Рекомендую!</p>
           </article>
           <article class="review">
-            <div class="review-head">
-              <img class="avatar" src="https://avatars.mds.yandex.net/get-yapic/28053/wRC8TV6h7JwbBAs2GDVmHvdl7s-1/islands-middle" alt="Александр Сергеевич Левченко">
-              <div><div class="name">Александр Сергеевич Левченко</div><div class="date">18 октября</div></div>
+            <div class="review-stars">★★★★★</div>
+            <p>Делала окрашивание — цвет получился мягкий и живой. Понравилось, что всё объяснили по уходу и не торопили во время процедуры.</p>
+            <div class="review-author">
+              <div class="avatar">М</div>
+              <div><div class="author-name">Марина</div><div class="author-meta">гость студии</div></div>
             </div>
-            <div class="stars">★★★★★</div>
-            <p>Мужская стрижка супер. Мне понравилось. Пришел без записи.</p>
           </article>
           <article class="review">
-            <div class="review-head">
-              <img class="avatar" src="https://avatars.mds.yandex.net/get-yapic/58107/YScWlVtUZjvbF3gGZskhkY0-1/islands-middle" alt="Ситора Джураева">
-              <div><div class="name">Ситора Джураева</div><div class="date">29 сентября</div></div>
+            <div class="review-stars">★★★★★</div>
+            <p>Уютное место рядом с домом. Записалась быстро, приняли вовремя, результатом очень довольна. Обязательно приду ещё.</p>
+            <div class="review-author">
+              <div class="avatar">Е</div>
+              <div><div class="author-name">Екатерина</div><div class="author-meta">гость студии</div></div>
             </div>
-            <div class="stars">★★★★★</div>
-            <p>Благодарю Аллу за прекрасную укладку волос. Профессионал своего дела.</p>
-          </article>
-          <article class="review">
-            <div class="review-head">
-              <img class="avatar" src="https://avatars.mds.yandex.net/get-yapic/59871/18Z5BKq6KwMYgoZTjZLisd7awwM-1/islands-middle" alt="Андрей Белый">
-              <div><div class="name">Андрей Белый</div><div class="date">6 августа</div></div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p>Отличное место 🔥 рядом с домом, мастера профессионалы. Хожу 4 года и полностью доволен, ценник не кусается.</p>
           </article>
         </div>
       </div>
@@ -303,75 +406,143 @@
     <section id="gallery">
       <div class="container">
         <div class="section-head">
-          <div class="kicker">Фото</div>
-          <h2>Атмосфера и образы</h2>
-          <p>Немного настроения и вдохновения из мира красоты.</p>
+          <div>
+            <div class="kicker">Атмосфера</div>
+            <h2>Немного вдохновения</h2>
+            <p>Эстетика, свет, детали и образы — всё, что создаёт настроение нашей студии.</p>
+          </div>
         </div>
-        <div class="gallery">
-          <div class="g big"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80" alt="Мастер за работой"></div>
-          <div class="g"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80" alt="Красивый образ"></div>
-          <div class="g"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Рабочее место парикмахера"></div>
-          <div class="g"><img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=900&q=80" alt="Средства по уходу"></div>
-          <div class="g"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80" alt="Укладка волос"></div>
+        <div class="gallery-grid">
+          <div class="g-item large">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=80" alt="Образ после визита в студию">
+            <div class="g-label">Естественная красота</div>
+          </div>
+          <div class="g-item">
+            <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=900&q=80" alt="Профессиональный уход">
+            <div class="g-label">Уход</div>
+          </div>
+          <div class="g-item">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80" alt="Укладка волос">
+            <div class="g-label">Укладка</div>
+          </div>
+          <div class="g-item">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" alt="Интерьер салона">
+            <div class="g-label">Атмосфера</div>
+          </div>
+          <div class="g-item">
+            <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=80" alt="Детали красоты">
+            <div class="g-label">Детали</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta">
-      <div class="container">
-        <div class="cta-box">
-          <div>
-            <h2>Готовы к новому образу?</h2>
-            <p>Запишитесь в «Салончик» удобным способом — позвоните или напишите в WhatsApp/Telegram. Мы подберём время и мастера.</p>
+    <section id="booking" class="booking">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <div class="kicker">Запись</div>
+          <h2>Запишитесь на визит</h2>
+          <p>Оставьте заявку — мы свяжемся с вами, чтобы подтвердить время и уточнить детали. Если удобнее, просто позвоните или напишите в WhatsApp.</p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div><strong>Оставьте контакты</strong><span>Имя, телефон и желаемая услуга.</span></div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div><strong>Мы подтвердим запись</strong><span>Согласуем удобное время и мастера.</span></div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div><strong>Приходите в студию</strong><span>Пр. Энергетиков, 46, корп. 1, Санкт-Петербург.</span></div>
+            </div>
           </div>
-          <a class="btn btn-primary" href="tel:+79675704350">Позвонить +7 967 570-43-50</a>
         </div>
+
+        <form class="form-card" id="bookingForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Ваше имя</label>
+              <input id="name" name="name" type="text" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="field">
+              <label for="service">Услуга</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Выберите услугу</option>
+                <option>Стрижка</option>
+                <option>Окрашивание</option>
+                <option>Укладка</option>
+                <option>Уход за волосами</option>
+                <option>Консультация</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Желаемая дата</label>
+              <input id="date" name="date" type="date">
+            </div>
+            <div class="field full">
+              <label for="comment">Комментарий</label>
+              <textarea id="comment" name="comment" placeholder="Удобное время или пожелания"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            <a class="btn btn-outline" href="tel:+79627177428">Позвонить</a>
+          </div>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь на связь по указанным контактам для подтверждения записи.</p>
+          <div class="form-success" id="formSuccess">Спасибо! Заявка отправлена. Мы свяжемся с вами в ближайшее время.</div>
+        </form>
       </div>
     </section>
 
     <section id="contacts">
-      <div class="container contacts">
-        <div class="card">
+      <div class="container contacts-grid">
+        <div class="about-card contact-card">
           <div class="kicker">Контакты</div>
-          <h2>Приходите в Салончик</h2>
+          <h2>Ждём вас в студии</h2>
           <div class="contact-list">
             <div class="contact-item">
-              <div class="cicon">📍</div>
+              <div class="c-icon">⌂</div>
               <div>
                 <small>Адрес</small>
                 <strong>Санкт-Петербург, проспект Энергетиков, 46, корп. 1</strong>
               </div>
             </div>
             <div class="contact-item">
-              <div class="cicon">☎</div>
+              <div class="c-icon">☎</div>
               <div>
                 <small>Телефон</small>
-                <a class="link" href="tel:+79675704350">+7 967 570-43-50</a>
+                <a class="link" href="tel:+79627177428">+7 (962) 717-74-28</a>
               </div>
             </div>
             <div class="contact-item">
-              <div class="cicon">★</div>
+              <div class="c-icon">✉</div>
               <div>
-                <small>Рейтинг</small>
-                <strong>4.7 — на Яндекс Картах</strong>
+                <small>Мессенджеры</small>
+                <a class="link" href="https://wa.me/79627177428" target="_blank" rel="noopener">WhatsApp</a>
+                &nbsp;·&nbsp;
+                <a class="link" href="https://t.me/+79627177428" target="_blank" rel="noopener">Telegram</a>
               </div>
             </div>
             <div class="contact-item">
-              <div class="cicon">💬</div>
+              <div class="c-icon">◷</div>
               <div>
                 <small>Запись</small>
-                <strong>По телефону и в мессенджерах</strong>
+                <strong>По телефону, в мессенджерах или через форму на сайте</strong>
               </div>
             </div>
           </div>
           <div class="socials">
-            <a class="wa" href="https://wa.me/79217700136" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="tg" href="https://telegram.me/+79217700136" target="_blank" rel="noopener">Telegram</a>
-            <a class="vk" href="https://vk.ru/club126281223" target="_blank" rel="noopener">ВКонтакте</a>
+            <a class="social wa" href="https://wa.me/79627177428" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="social tg" href="https://t.me/+79627177428" target="_blank" rel="noopener">Telegram</a>
           </div>
         </div>
-        <div class="map">
-          <iframe title="Карта — Салончик, проспект Энергетиков 46 корпус 1" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%AD%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%2C%2046%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201&z=16" loading="lazy"></iframe>
+        <div class="map-wrap">
+          <iframe title="Карта — Студия красоты, проспект Энергетиков 46 корпус 1" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%AD%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%2C%2046%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201&z=16" loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -379,9 +550,26 @@
 
   <footer>
     <div class="container foot">
-      <div>© 2026 «Салончик» — салон красоты и парикмахерская.</div>
-      <div>Проспект Энергетиков, 46, корп. 1, Санкт-Петербург</div>
+      <div>© 2026 Студия красоты. Проспект Энергетиков, 46, корп. 1, Санкт-Петербург.</div>
+      <div class="foot-links">
+        <a href="#services">Услуги</a>
+        <a href="#booking">Запись</a>
+        <a href="tel:+79627177428">+7 (962) 717-74-28</a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const success = document.getElementById('formSuccess');
+    const dateInput = document.getElementById('date');
+    if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      success.classList.add('show');
+      form.reset();
+      if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+    });
+  </script>
 </body>
 </html>
